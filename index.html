@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Required</title>
+    <style>
+        body {
+            background-color: #161616; /* A te sötét háttered */
+            color: #dbdbdb; /* A te betűszíned */
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer; /* Az egér mutatóvá válik, jelezve, hogy kattintható */
+            user-select: none; /* Ne lehessen kijelölni a szöveget, olyan legyen, mint egy gomb */
+            text-shadow: 1px 1px 8px #000;
+        }
+
+        .container {
+            animation: pulse 2s infinite; /* Enyhe pulzáló effekt, hogy éljen az oldal */
+        }
+
+        .container:hover {
+            color: #ffb6c1; /* A te rózsaszín kiemelő színed */
+            transition: color 0.3s linear;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+    </style>
+</head>
+
+<body onclick="window.location.href='home.html';">
+
+    <div class="container">
+        <p>Unusual activity detected.</p>
+        <br>
+        <p>[ click anywhere to confirm ur not a bot ]</p>
+    </div>
+
+</body>
+</html>
